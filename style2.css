@@ -1,0 +1,67 @@
+em {
+    color: #ff99f7;
+    position: relative;
+    left: 40px;
+    bottom: 20px;
+   
+}
+
+h2 {
+    font-family: serif;
+    position: relative;
+    left: 40px;
+    
+}
+
+div {
+    border: 1px solid #e8e8e8;
+    position: relative;
+    top: 10px;
+}
+
+h1 {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    font-family: cursive,sans-serif,serif;
+}
+
+nav a {
+    text-decoration: none;
+    position: relative;
+    top: 20px;
+}
+
+.homepage {
+    position: relative;
+    left: 550px;
+     font-weight: bold;
+    color: #333;
+    font-size: 30px;
+}
+
+.blogpage {
+    position: relative;
+    left: 800px;
+    font-weight: bold;
+    color: #333;
+    font-size: 30px;
+}
+
+
+nav .homepage:hover {
+    
+                color: red;
+               
+}
+
+
+
+nav .blogpage:hover {
+    
+                color: red;
+}
+
+p {
+    font-size: 18px;
+}
