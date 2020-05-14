@@ -2,6 +2,9 @@
 <html>
     <head>
         <title>COMPUTERHACKS</title>
+        
+       
+        
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -18,6 +21,157 @@
         
         
         <p>NOTE:Bookmark this page to be updated.sign up option will be available soon.</p>
+        
+        <div>
+            <h3>CHECK IF YOUR PC/LAPTOP IS WORTH IT?</h3>
+            <form>
+                    <label >what is the processor? <br>
+                        <select  id="processor">
+                            <option disabled selected value="0">--choose an option--</option>
+                            <option value="0.1">i3</option>
+                            <option value="0.2">i5</option>
+                            <option value="0.3">i7</option>
+                        </select>
+                
+                    </label> <br>
+                    
+                    <label >what is the RAM? <br>
+                        <select  id="RAM">
+                            <option disabled selected value="0">--choose an option--</option>
+                            <option value="0.1">2GB</option>
+                            <option value="0.2">4GB</option>
+                            <option value="0.3">8GB</option>
+                        </select>
+                
+                    </label> <br>
+                
+                    <label >what is the Graphics card? <br>
+                        <select  id="GPU">
+                            <option disabled selected value="0">--choose an option--</option>
+                            <option value="0.1">intel</option>
+                            <option  value="0.2">AMD</option>
+                            <option value="0.3">Nvidia</option>
+                        </select>
+                
+                    </label> <br>
+                
+                    <label >what is the Price? <br>
+                        <select  id="cost">
+                            <option disabled selected value="0">--choose an option--</option>
+                            <option value="0.1">20,000-30,000</option>
+                            <option value="0.2">30,000-50,000</option>
+                            <option value="0.3">more than 50,000</option>
+                        </select>
+                
+                    </label> <br>
+                
+                    <button id="button" type="button" getdata="false">CHECK!</button> <br>
+                    
+                       <span id="checked">HI</span>
+            
+            
+            
+                        
+            
+            
+            </form>
+        
+             
+        
+        </div>
+        
+            <script type="text/javascript">
+                                    //scripting goes here
+
+                    //making the function
+                    function check() {
+                            //store values
+                            var processor = document.getElementById("processor").value;
+                            var RAM = document.getElementById("RAM").value;
+                            var GPU = document.getElementById("GPU").value;
+                            var cost = document.getElementById("cost").value;
+
+                            //validation
+                            if(processor == 0 || RAM == 0 || GPU == 0 || cost == 0){
+                                 window.alert("Please fill this form to get this running");
+                                 return;
+
+                                }
+
+                            //real process
+                            var hw = "IT'S WORTH IT";
+                            var hw2 = "GO FOR ANOTHER ONE"
+                            
+                            if(processor == 0.1 || RAM == 0.1 || GPU == 0.1 || cost == 0.1){
+                                document.getElementById("checked").style.display = "block";
+                                document.getElementById("checked").innerHTML = hw;
+                                
+                                
+                            }
+                        
+                             if(processor == 0.1 || RAM == 0.2 || GPU == 0.2 || cost == 0.2){
+                                document.getElementById("checked").style.display = "block";
+                                document.getElementById("checked").innerHTML = hw;
+                                
+                                
+                            }
+                        
+                             if(processor == 0.1 || RAM == 0.3 || GPU == 0.3 || cost == 0.3){
+                                document.getElementById("checked").style.display = "block";
+                                document.getElementById("checked").innerHTML = "GO FOR ANOTHE ONE";
+                                
+                                
+                            }
+                        
+                             if(processor == 0.2 || RAM == 0.1 || GPU == 0.1 || cost == 0.1){
+                                document.getElementById("checked").style.display = "block";
+                                document.getElementById("checked").innerHTML = "GO FOR ANOTHE ONE";
+                                
+                                
+                            }
+                        
+                             if(processor == 0.2 || RAM == 0.2 || GPU == 0.2 || cost == 0.2){
+                                document.getElementById("checked").style.display = "block";
+                                document.getElementById("checked").innerHTML = hw;
+                                
+                                
+                            }
+                        
+                             if(processor == 0.2 || RAM == 0.3 || GPU == 0.3 || cost == 0.3){
+                                document.getElementById("checked").style.display = "block";
+                                document.getElementById("checked").innerHTML = hw;
+                                
+                                
+                            }
+                        
+                             if(processor == 0.3 || RAM == 0.1 || GPU == 0.1 || cost == 0.1){
+                                document.getElementById("checked").style.display = "block";
+                                document.getElementById("checked").innerHTML = "GO FOR ANOTHE ONE";
+                                
+                                
+                            }
+                        
+                             if(processor == 0.3 || RAM == 0.2 || GPU == 0.2 || cost == 0.2){
+                                document.getElementById("checked").style.display = "block";
+                                document.getElementById("checked").innerHTML = hw;
+                                
+                                
+                            }
+                        
+                             if(processor == 0.3 || RAM == 0.3 || GPU == 0.3 || cost == 0.3){
+                                document.getElementById("checked").style.display = "block";
+                                document.getElementById("checked").innerHTML = hw;
+                                
+                                
+                            }
+                        }
+
+
+                    //button on click calls the function
+                    document.getElementById("button").onclick = function() { check(); };
+                    // hide hi
+                    document.getElementById("checked").style.display = "none";
+            </script>
     
     
     </body>
