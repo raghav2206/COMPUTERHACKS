@@ -39,10 +39,9 @@ nav .blogpage:hover {
 }
 
 
-#tech {
-    margin-top: 40px;
-    position: relative;
-    left: 500px;
+#photo {
+    text-align: center;
+    margin-top: 10px;
 }
 
 p {
@@ -73,13 +72,14 @@ h3 {
     text-align: center;
 }
 
+#buttoncon {
+    text-align: center;
+}
+
 #button {
-    font-size: 36px;
-    margin-top: 5px;
-    border-color: #333;
+    font-size: 28px;
     background-color: yellow;
-    position: relative;
-    left: 350px;
+    border-color: #333;
 }
 
 #button:active {
