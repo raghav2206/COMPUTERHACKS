@@ -74,22 +74,22 @@
                     
                   
                     //process goes here
-                       if(job == 0.1 || gpu == 0.1){
+                       if(job == 0.1 && gpu == 0.1){
                            document.getElementById("ots").style.display = "block";  
                            document.getElementById("ots").innerHTML = "AMD radeon rx 590";
                        }
                     
-                     if(job == 0.1 || gpu == 0.2){
+                     if(job == 0.1 && gpu == 0.2){
                            document.getElementById("ots").style.display = "block";  
                            document.getElementById("ots").innerHTML = "NVIDIA GTX 1660";
                        }
                     
-                      if(job == 0.2 || gpu == 0.1){
+                      if(job == 0.2 && gpu == 0.1){
                            document.getElementById("ots").style.display = "block";  
                            document.getElementById("ots").innerHTML = "AMD Sapphire Radeon Rx 580";
                        }
                     
-                    if(job == 0.2 || gpu == 0.2){
+                      if(job == 0.2 && gpu == 0.2){
                            document.getElementById("ots").style.display = "block";  
                            document.getElementById("ots").innerHTML = "NVIDIA RTX 2060";
                        }
