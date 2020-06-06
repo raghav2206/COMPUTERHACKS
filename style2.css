@@ -26,41 +26,10 @@ h1 {
     font-family: cursive,sans-serif,serif;
 }
 
-nav a {
-    text-decoration: none;
-    position: relative;
-    top: 20px;
+nav {
+    background-color: black;
 }
 
-.homepage {
-    position: relative;
-    left: 550px;
-     font-weight: bold;
-    color: #333;
-    font-size: 30px;
-}
-
-.blogpage {
-    position: relative;
-    left: 800px;
-    font-weight: bold;
-    color: #333;
-    font-size: 30px;
-}
-
-
-nav .homepage:hover {
-    
-                color: red;
-               
-}
-
-
-
-nav .blogpage:hover {
-    
-                color: red;
-}
 
 p {
     font-size: 18px;
