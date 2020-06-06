@@ -2,16 +2,54 @@
 <html>
     <head>
         <title>COMPUTERHACKS</title>
+        <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         
        
         
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>WELCOME TO MY BLOG</h1>
-        <nav><a href="index.html" class=homepage>HOME</a>   <a href="blog.html" class=blogpage>BLOG</a>      </nav> 
+        
+        <nav class="navbar navbar-default navbar-fixed-top ">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                            HOME
+
+                        
+                        
+                        
+                        </a>
+                        
+                        <ul class="dropdown-menu">
+                            <li><a href="blog.html">BLOG</a></li>
+                        
+                        
+                        
+                        
+                        </ul>
+                    
+                    
+                    
+                    
+                    </li>
+            
+            
+            
+            
+                </ul>
+                
+            </div>    
+        </nav>
+        
         <div id = "photo">
-            <img src="tech.jpg" id=tech >
+            <img src="tech.jpg" id=tech class="img-responsive" >
         </div>    
         <p>Welcome guys.I started this blog website to clear your queries and help you fix some problems which you have with your PC or laptop.I will also post about phones and phone tricks
          and how to use linux os in mobile.Do not misuse any tricks said in this blog website.We will also post on OS reviews and coding.ENJOY!!</p>
@@ -21,11 +59,12 @@
         <p id="disclaimer"> <strong> DISCLAIMER: </strong>All the content provided by this blog website is only for <em>educational purpose.</em> We mean no harm to anyone. </p>
         
         
-        <p>NOTE:Bookmark this page to be updated.sign up option will be available soon.</p>
+        
         
         <div>
             <h3>CHECK THE GRAPHICS CARD YOU DESERVE?</h3>
-            <form>
+            <form id="gpuder">
+                <div class="container-fluid">
                     <label >what is the need for the graphics card? <br>
                         <select  id="JOB">
                             <option disabled selected value="0">--choose an option--</option>
@@ -45,15 +84,12 @@
                     </label> <br>
                 
                
-                    <div id = "buttoncon">
+                    <div class = "buttoncon">
                             <button id="button" type="button" getdata="false">CHECK!</button> <br>
                     </div>
                        <span id="ots">HI</span>
-            
-            
-            
                         
-            
+                </div>
             
             </form>
         
@@ -61,7 +97,35 @@
         
         </div>
         
+        <div>
+        
+        <form id="signup">
+            <h2>SIGN UP</h2>
+            <hr>
+            <label>
+                <input id="mail" type="email" placeholder="EMAIL ADDRESS" >
+            </label><br><br>
+            <label>
+                <input id="pass" type="password" placeholder="PASSWORD">
+            </label><br><br>
+            <label>
+                <input id="name" type="text" placeholder="FULL NAME">
+            </label><br><br>
+            <label>
+                <input type="checkbox">
+            </label>I AGREE TO THE TERMS AND CONDITIONS<br>
+            <div class="buttoncon">
+                    <button id="sign" type="button" getdata="false">SIGN UP</button>
+            </div>
+            
+          
+        
+        </form>
+            
+              </div>
+        
             <script type="text/javascript">
+                //for gpu finder
                 //define the function
                 function check() {
                     //collect the value given by user
@@ -106,9 +170,48 @@
                 document.getElementById("ots").style.display = "none";  
                 //giving function
                 document.getElementById("button").onclick = function() {check();};
+                
+                
+
                    
                     
             </script>
+        
+            <script type="text/javascript">
+                                // defining the function
+                function signup(){
+                    //store the value
+                    var mail = document.getElementById("mail").getContext;
+                    var passw = document.getElementById("pass").value;
+                    var fname = document.getElementById("name").value;
+                    
+                    //validation
+                    if(mail == "" || passw == "" || fname == ""){
+                        return window.alert("Please fill this form to get this running");
+                    }
+                    
+                  
+                
+                    
+                }
+                    
+                }
+                //giving function
+                document.getElementById("sign").onclick = function() {signup();};
+        
+        
+        
+        
+        
+        
+            </script>
+        
+        
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     
     
     </body>
